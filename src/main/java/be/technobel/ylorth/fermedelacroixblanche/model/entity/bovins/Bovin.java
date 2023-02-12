@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -52,5 +53,11 @@ public class Bovin {
     @ManyToOne
     @JoinColumn(name = "mere")
     private Bovin mere;
+
+    @OneToMany(mappedBy = "pere")
+    private Set<Bovin> enfantPere;
+
+    @OneToMany(mappedBy = "mere")
+    private Set<Bovin> enfantsMere;
 
 }

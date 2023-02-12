@@ -13,6 +13,6 @@ import java.time.LocalDate;
 public class FemelleReproduction extends Bovin{
 
     private LocalDate derniereInsemination;
-    private short perteGrossesse;
+    private int perteGrossesse;
 
 }

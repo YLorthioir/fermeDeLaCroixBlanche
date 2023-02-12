@@ -29,7 +29,7 @@ public class Culture {
     private Fauche fauche;
 
     @ManyToOne
-    @JoinColumn(name = "type_de_grains_id")
-    private TypeDeGrains typeDeGrains;
+    @JoinColumn(name = "type_de_grain_id")
+    private TypeDeGrain typeDeGrain;
 
 }

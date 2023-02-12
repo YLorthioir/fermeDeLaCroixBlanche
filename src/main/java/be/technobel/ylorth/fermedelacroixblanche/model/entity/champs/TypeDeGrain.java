@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Entity
 @Data
-public class TypeDeGrains {
+public class TypeDeGrain {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,7 +17,7 @@ public class TypeDeGrains {
     @Column(nullable = false, unique = true)
     private String nomGrain;
 
-    @OneToMany(mappedBy = "typeDeGrains", orphanRemoval = true)
+    @OneToMany(mappedBy = "typeDeGrain", orphanRemoval = true)
     private Set<Culture> cultures = new LinkedHashSet<>();
 
 }
