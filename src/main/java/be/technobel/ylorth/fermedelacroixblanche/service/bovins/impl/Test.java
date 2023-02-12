@@ -1,4 +1,4 @@
-package be.technobel.ylorth.fermedelacroixblanche.service.impl;
+package be.technobel.ylorth.fermedelacroixblanche.service.bovins.impl;
 
 import be.technobel.ylorth.fermedelacroixblanche.repository.bovins.FemelleReproductionRepository;
 
