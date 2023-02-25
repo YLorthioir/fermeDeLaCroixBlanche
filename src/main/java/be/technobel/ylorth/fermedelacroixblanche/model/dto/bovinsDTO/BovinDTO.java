@@ -3,6 +3,7 @@ package be.technobel.ylorth.fermedelacroixblanche.model.dto.bovinsDTO;
 import be.technobel.ylorth.fermedelacroixblanche.model.dto.champsDTO.ChampDTO;
 import be.technobel.ylorth.fermedelacroixblanche.model.dto.santeDTO.ADTO;
 import be.technobel.ylorth.fermedelacroixblanche.model.dto.santeDTO.InjectionDTO;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
