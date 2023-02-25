@@ -11,7 +11,19 @@ public class FemelleReproductionMapper {
         if(entity==null)
             return null;
 
-        return FemelleReproductionDTO.builder()
+            return FemelleReproductionDTO.builder()
+                .id(entity.getId())
+                .dateDeNaissance(entity.getDateDeNaissance())
+                .enCharge(entity.isEnCharge())
+                .neCesarienne(entity.isNeCesarienne())
+                .nom(entity.getNom())
+                .numeroInscription(entity.getNumeroInscription())
+                .poidsNaissance(entity.getPoidsNaissance())
+                .sexe(entity.getSexe())
+                .champId(entity.getChamp().getId())
+                .mereId(entity.getMere().getId())
+                .pereId(entity.getPere().getId())
+                .raceId(entity.getRace().getId())
                 .derniereInsemination(entity.getDerniereInsemination())
                 .perteGrossesse(entity.getPerteGrossesse())
                 .build();
