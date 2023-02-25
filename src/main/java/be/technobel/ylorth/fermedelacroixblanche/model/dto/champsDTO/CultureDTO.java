@@ -1,10 +1,12 @@
 package be.technobel.ylorth.fermedelacroixblanche.model.dto.champsDTO;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
 
+@Builder
 @Getter @Setter
 public class CultureDTO {
 
@@ -13,10 +15,10 @@ public class CultureDTO {
     private LocalDate dateMiseEnCulture;
     private LocalDate dateDeFin;
     private String analysePDF;
-    private LocalDate dateEpendage;
+    private LocalDate dateEpandage;
     private double qttFumier;
-    private ChampDTO champDTO;
-    private FaucheDTO faucheDTO;
+    private Long champId;
+    private Long faucheId;
     private TypeDeGrainDTO typeDeGrainDTO;
 
 }

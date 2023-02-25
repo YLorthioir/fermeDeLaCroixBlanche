@@ -16,7 +16,7 @@ public class Melange {
     private long id;
     @Column(nullable = false, unique = true)
     private String nomMelange;
-    private String Description;
+    private String description;
 
     @OneToMany(mappedBy = "melange", orphanRemoval = true)
     private Set<BovinEngraissement> bovinEngraissements = new LinkedHashSet<>();

@@ -18,7 +18,7 @@ public class Culture {
     private LocalDate dateMiseEnCulture;
     private LocalDate dateDeFin;
     private String analysePDF;
-    private LocalDate dateEpendage;
+    private LocalDate dateEpandage;
     private double qttFumier;
 
     @ManyToOne

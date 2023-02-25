@@ -6,11 +6,13 @@ import be.technobel.ylorth.fermedelacroixblanche.model.dto.santeDTO.InjectionDTO
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+@SuperBuilder
 @Getter @Setter
 public class BovinDTO {
 
@@ -22,13 +24,10 @@ public class BovinDTO {
     private String nom;
     private boolean enCharge;
     private boolean neCesarienne;
-    private RaceDTO raceDTO;
-    private ChampDTO champDTO;
+    private Long raceId;
+    private Long champId;
     private Set<InjectionDTO> injectionsDTO = new LinkedHashSet<>();
     private Set<ADTO> aDTO = new LinkedHashSet<>();
-    private BovinDTO pereDTO;
-    private BovinDTO mereDTO;
-    private Set<BovinDTO> enfantPereDTO;
-    private Set<BovinDTO> enfantsMereDTO;
-
+    private Long pereId;
+    private Long mereId;
 }

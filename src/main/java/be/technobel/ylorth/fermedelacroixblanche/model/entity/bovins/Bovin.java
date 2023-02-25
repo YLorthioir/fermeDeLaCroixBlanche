@@ -51,7 +51,7 @@ public class Bovin {
     private Bovin pere;
 
     @ManyToOne
-    @JoinColumn(name = "mere")
+    @JoinColumn(name = "mere_id")
     private Bovin mere;
 
     @OneToMany(mappedBy = "pere")

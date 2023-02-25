@@ -1,6 +1,7 @@
 package be.technobel.ylorth.fermedelacroixblanche.model.dto.champsDTO;
 
 import be.technobel.ylorth.fermedelacroixblanche.model.dto.venteDTO.VenteFaucheDTO;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import java.time.LocalDate;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+@Builder
 @Getter @Setter
 public class FaucheDTO {
 

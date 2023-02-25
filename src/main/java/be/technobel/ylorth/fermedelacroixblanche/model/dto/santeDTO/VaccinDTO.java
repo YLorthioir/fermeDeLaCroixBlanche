@@ -1,8 +1,10 @@
 package be.technobel.ylorth.fermedelacroixblanche.model.dto.santeDTO;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+@Builder
 @Getter @Setter
 public class VaccinDTO {
 

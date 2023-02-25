@@ -12,7 +12,7 @@ public class Race {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "race_id", nullable = false)
-    private long idRace;
+    private long id;
     @Column(nullable = false, unique = true)
     private String nom;
     @OneToMany(mappedBy = "race")
