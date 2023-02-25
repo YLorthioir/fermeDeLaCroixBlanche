@@ -5,6 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class BovinReproductionUpdateForm {
+    //TODO annotation pour sexe, dateDeNaissance, pertegrossesse, date insemination
     private char sexe;
     private LocalDate dateDeNaissance;
     private double poidsNaissance;

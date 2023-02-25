@@ -7,9 +7,9 @@ import jakarta.validation.constraints.Positive;
 import java.time.LocalDate;
 
 public class BovinInsertForm {
+    //TODO annotation pour sexe, dateDeNaissance
     @NotBlank
     private String numeroInscription;
-    //Annotation Sexe
     private char sexe;
     @NotNull
     private LocalDate dateDeNaissance;
