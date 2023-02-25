@@ -1,6 +1,5 @@
 package be.technobel.ylorth.fermedelacroixblanche.model.form.sante;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 
 import java.util.Set;

@@ -1,13 +1,21 @@
 package be.technobel.ylorth.fermedelacroixblanche.model.form.bovins;
 
+import be.technobel.ylorth.fermedelacroixblanche.validation.constraints.ConfirmPoids;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Positive;
+import lombok.Data;
+
 import java.time.LocalDate;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+@Data
+@ConfirmPoids
 public class BovinEngraissementUpdateForm {
-    //TODO annotation pour sexe, dateDeNaissance,poidscarcasse et poidssurpattes
     private char sexe;
+    @Past
     private LocalDate dateDeNaissance;
+    @Positive
     private double poidsNaissance;
     private String nom;
     private boolean enCharge;
@@ -19,6 +27,7 @@ public class BovinEngraissementUpdateForm {
     private Long mereId;
     private double poidsSurPattes;
     private double poidsCarcasse;
+    @Past
     private LocalDate dateEngraissement;
     private Long melangeId;
 }
